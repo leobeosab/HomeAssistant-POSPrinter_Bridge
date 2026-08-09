@@ -7,6 +7,7 @@ COPY requirements.txt /tmp/requirements.txt
 RUN apk update
 RUN apk add python3
 RUN apk add py3-pip
+RUN apk add libusb
 RUN cd /usr/local/bin
 RUN python -m venv /usr/local/bin/POSPrinter_Bridge
 ENV PATH="/usr/local/bin/POSPrinter_Bridge/bin:$PATH"
