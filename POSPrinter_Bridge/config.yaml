@@ -1,12 +1,14 @@
 name: POS Printer Bridge
-version: v0.0.7
+version: v0.0.8
 slug: pos_printer_bridge
 description: API Bridge for ESC/POS Receipt Printers
-url: https://github.com/MichelfrancisBustillos/HomeAssistant-POSPrinter_Bridge
+url: https://github.com/leobeosab/HomeAssistant-POSPrinter_Bridge
 init: false
 webui: http://[HOST]:[PORT:8000]/
 host_network: true
 usb: true
+uart: true
+udev: true
 watchdog: tcp://[HOST]:[PORT:8000]
 legacy: true
 ports:
@@ -40,7 +42,7 @@ schema:
   PRINTER_IP: str?
   PRINTER_USB_VENDOR_ID: str?
   PRINTER_USB_PRODUCT_ID: str?
-  PRITNER_USB_INTERFACE: int?
+  PRINTER_USB_INTERFACE: int?
   PRINTER_USB_ENDPOINT_OUT: str?
   PRINTER_USB_ENDPOINT_IN: str?
   PRINTER_SERIAL_PORT: str?
