@@ -199,6 +199,8 @@ def init_printer():
                 logging.error("Network printer connection error: %s", str(e))
         case 'usb':
             logging.info("Initializing USB printer")
+            logging.info(f"{os.getenv('PRINTER_USB_VENDOR_ID')}:{os.getenv('PRINTER_USB_PRODUCT_ID')}")
+            logging.info(f"{os.getenv('PRINTER_USB_ENDPOINT_IN')}:{os.getenv('PRINTER_USB_ENDPOINT_OUT')}")
             try:
                 PRINTER = escpos.printer.Usb(os.getenv('PRINTER_USB_VENDOR_ID'),
                                             os.getenv('PRINTER_USB_PRODUCT_ID'),

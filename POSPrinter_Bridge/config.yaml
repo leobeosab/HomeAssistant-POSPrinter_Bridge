@@ -1,5 +1,5 @@
 name: POS Printer Bridge
-version: v0.0.9
+version: v0.0.10
 slug: pos_printer_bridge
 description: API Bridge for ESC/POS Receipt Printers
 url: https://github.com/leobeosab/HomeAssistant-POSPrinter_Bridge
