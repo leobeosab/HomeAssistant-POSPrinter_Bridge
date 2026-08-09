@@ -4,4 +4,4 @@ pydantic
 dotenv
 uvicorn
 python-multipart
-setuptools
+setuptools<82
